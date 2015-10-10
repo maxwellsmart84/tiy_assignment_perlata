@@ -1,0 +1,51 @@
+body {
+  background-image: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+#wrapper {
+  width:55%;
+  height:100%;
+  margin:0 auto;
+}
+header {
+    /*position:relative;*/
+    width:100%;
+    background-color: red;
+    height:425px;
+}
+
+.social-nav {
+  width:100%;
+  height:8%;
+}
+
+.social-nav li {
+display:inline block;
+}
+
+.social-nav img {
+  width:30px;
+  height:30px;
+}
+
+#header-nav {
+  width: 100%;
+  height: 5%;
+}
+
+#header-nav ul {
+  display:inline-block;
+}
+
+#header-nav li {
+  background-color: red;
+  box-shadow: 0px 5px 0px rgba(0,0,0,0.5);
+
+}
+
+banner {
+
+}
