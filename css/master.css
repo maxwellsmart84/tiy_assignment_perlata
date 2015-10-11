@@ -1,3 +1,7 @@
+html {
+   box-sizing: border-box;
+}
+
 ul {
   margin:0;
   padding:0;
@@ -77,7 +81,7 @@ padding: 0 3px;
   padding:0 5px;
   width:162px;
   height:30px;
-  background-color: darkred;
+  background-color: #ca0707;
   box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
 }
 
@@ -87,6 +91,7 @@ padding: 0 3px;
     position:relative;
     font-family: "Didact Gothic",sans-serif;
     font-weight: bold;
+    color:white;
 }
 
 .dash {
@@ -98,4 +103,19 @@ padding: 0 3px;
   width:100%;
   height:250px;
   border:5px solid white;
+  overflow: hidden;
+  background-image: url(../assets/top-image.png);
+  background-size: 130% auto;
+}
+
+#banner img:nth-child(1){
+    width:100%;
+    height:250px;
+}
+
+#banner img {
+  width: auto;
+  height:100px;
+  overflow:hidden;
+
 }
