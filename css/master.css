@@ -21,10 +21,11 @@ ul {
 }
 
 body {
+  position:absolute;
   background-image: url(../assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-attachment: fixed;
+  background-attachment:fixed;
 }
 
 #wrapper {
@@ -67,6 +68,8 @@ padding: 0 3px;
   width: 100%;
   margin:0 auto;
   height: 50px;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+
 }
 
 #header-nav ul {
@@ -107,6 +110,7 @@ padding: 0 3px;
   background-image: url(../assets/top-image.png);
   background-size: 152% auto;
   background-position: -140px -113px;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
 }
 /*grid overlay */
 #banner img:nth-child(1) {
@@ -127,43 +131,69 @@ padding: 0 3px;
 #banner-loc {
   width:100%;
   height:70px;
-  background-color: green;
 }
 
 #banner-loc ul {
+  width: 100%;
   display: inline-block;
+  margin: 4% 0px 10% 44%;
+
 }
 
-#banner li {
+#banner-loc li {
   list-style: none;
-  border-radius:
+  width:13px;
+  height:13px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 100%;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+
 }
 
+.dots {
+  color:red;
+  width:5px;
+  height:5px;
+  border-radius: 100%;
+
+}
 
 .threecol {
   width:100%;
   height:175px;
   display: inline-block;
   font-family: "Didact Gothic", sans-serif;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+
 }
-.threecol h1{}
-.threecol p{
+.threecol h1{
   font-size: .8em;
 }
 
-.cols {
-  width:32%;
-  height:auto;
-  margin-right: .9%;
-  background-color: white;
-  display:inline-block;
+.threecol p{
+  font-size: .6em;
+  line-height: 2;
 }
+/* cols grid alignment */
+.cols {
+  border-spacing: 5px;
+  width: 26%;
+  padding: 3%;
+  margin: 0% 0% 0% .5%;
+  height: auto;
+  /* margin-right: .9%; */
+  background-color: white;
+  display: inline-block;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+  }
 
 #skaters {
   width: 100%;
   height: 423px;
   display: inline-block;
   position: relative;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
 }
 
 table {
@@ -174,6 +204,8 @@ table {
   width:100%;
   background-color:transparent;
   border-spacing: 7px;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+;
 }
 
 
@@ -183,18 +215,28 @@ table tr:nth-child(1) {
   background-color: transparent;
 }
 
-
-table tr td:nth-child(1) {
-  width:30%;
-  padding:2%;
-  background-size: 171% auto;
-  background-image:url(../assets/sk8er-4.png);
-  background-repeat: no-repeat;
-  overflow: hidden;
-  border:white 4px solid;
-  background-position: -203px -8px;
+table tr td a h1 {
+text-align: center;
+line-height: 35px;
+color:white;
+font-family: "Open Sans", sans-serif;
+font-weight:800;
 }
 
+table tr td:nth-child(1) {
+    width: 30%;
+    background-size: 161% auto;
+    background-image: url(../assets/sk8er-4.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: white 4px solid;
+    background-position: -132px -8px;
+}
+
+table tr td h1:nth-child(1) {
+  position: relative;
+  top:4%;
+}
 
 table tr td:nth-child(2) {
   width: 30%;
@@ -206,6 +248,12 @@ table tr td:nth-child(2) {
   background-position: -33px -11px;
 }
 
+table tr td h1:nth-child(2){
+  position: relative;
+  top:4%;
+}
+
+
 table tr td:nth-child(3) {
   width: 30%;
   background-size: 295% auto;
@@ -214,6 +262,12 @@ table tr td:nth-child(3) {
   overflow: hidden;
   border: white 4px solid;
   background-position: -357px 1px;
+}
+
+table tr td h1:nth-child(3) {
+  position: relative;
+  top:0;
+  left:0;
 }
 
 /*second row of table*/
@@ -234,11 +288,19 @@ table tr:nth-child(2) td {
   background-position: -2px -71px;
 }
 
+table tr:nth-child(2) td h1 {
+  text-align: center;
+  position: relative;
+  top:4%;
+  left: 5%;
+}
+
 #skateboards {
   width: 100%;
   height:267px;
   display:inline-block;
   background-color: white;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
 }
 
 .boards {
@@ -256,6 +318,7 @@ table tr:nth-child(2) td {
   height:300px;
   display: inline-block;
   background-color: white;
+  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
 }
 
 
@@ -277,31 +340,34 @@ table tr:nth-child(2) td {
   display:inline-block;
   background-color: white;
 }
-.contact-col-form input {
-  margin: 2%;
-  padding:0;
+
+#name {
+    position: relative;
+    top:39px;
+    right:20px;
+    width: 94%;
+    line-height: 26px;
+    box-shadow: 2px 0px 0px 2px rgba(255,255,255,0.5);
 }
 
-.contact-col-form input:nth-child(1) {
-  width: 100%;
-  margin:10px;
-  line-height: 20px;
+
+#email {
+  position: relative;
+  top:46px;
+  right:20px;
+  width: 94%;
+  /* margin-bottom: :45%; */
+  line-height: 26px;
+  box-shadow: 2px 0px 0px 2px rgba(255,255,255,0.5);
 }
 
-.contact-col-right li {
-  display: inline-block;
-}
-
-.contact-col input:nth-child(2) {
-  width:100%;
-  margin:10px;
-  line-height:20px;
-}
-
-.contact-col input:nth-child(3) {
-  width:100%;
-  margin:10px;
-  line-height:50px;
+#message {
+    position: relative;
+    top: 63px;
+    right: 20px;
+    width: 100%;
+    line-height: 64px;
+    box-shadow: 2px 0px 0px 2px rgba(255,255,255,0.5);
 }
 
 .contact-col-left p {
@@ -311,12 +377,15 @@ table tr:nth-child(2) td {
 }
 
 #submit {
-  padding:0 5px;
-  width:162px;
-  height:30px;
-  background-color: #ca0707;
-  box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
-}
+    position: relative;
+    top: 82px;
+    left: 96px;
+    padding: 0 5px;
+    width: 162px;
+    height: 30px;
+    background-color: #ca0707;
+    box-shadow: 0px 2px 0px rgba(255,255,255,0.5);
+  }
 
 #submit a {
   padding-left: 60px;
@@ -327,3 +396,7 @@ table tr:nth-child(2) td {
   font-weight: bold;
   color:white;
 }
+ footer {
+   width:100%;
+   height:80px;
+ }
