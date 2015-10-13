@@ -1,0 +1,41 @@
+@media (max-width: 400px) {
+  #wrapper {
+    width: 74%;
+    margin: 0; }
+  header {
+    height: auto; }
+  .social-nav {
+    width: 80%; }
+    .social-nav span {
+      display: none; }
+  #header-nav {
+    display: inline;
+    box-shadow: 0 0 0 0; }
+  #banner {
+    display: none; }
+  #logo img {
+    width: 68%;
+    margin: 7% 17%; }
+  #banner-loc {
+    display: none; }
+  .cols:nth-child(3) .cols:nth-child(2) {
+    display: none; }
+  .cols {
+    width: 75%;
+    margin-left: 10%; }
+    .cols h2 {
+      margin: 0 0 0 0;
+      border-top: solid 15px #ca0707;
+      text-align: center; }
+    .cols p {
+      margin: 0; }
+  #resp-table {
+    display: table; }
+  .lance {
+    width: 50%; }
+  .rodney {
+    width: 50%; }
+  .steve {
+    width: 50; }
+  .tommy {
+    width: 50; } }
