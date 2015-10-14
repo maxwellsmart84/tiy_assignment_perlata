@@ -79,12 +79,14 @@
       display: block; }
   #contact-us {
     background-color: transparent;
-    height: 214px;
+    height: 332px;
     margin-top: 9%; }
   .contact-col-left {
     display: none; }
   .contact-col-right {
     background-color: transparent; }
+  .contact-us-resp {
+    display: block; }
   .contact-col-right h4 {
     font-size: 1.5em;
     position: relative;
