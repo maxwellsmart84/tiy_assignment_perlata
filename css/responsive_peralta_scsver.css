@@ -33,7 +33,8 @@
     display: none; }
   .cols {
     width: 75%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    height: 233px; }
     .cols h2 {
       margin: 0 0 0 0;
       border-top: solid 15px #ca0707;
