@@ -77,7 +77,7 @@ header {
 
 #header-nav li {
   display: inline-block;
-  padding: 0 5px;
+  padding: -1% 5px;
   width: 162px;
   height: 30px;
   background-color: #ca0707;
@@ -105,16 +105,14 @@ header {
   box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5); }
 
 /*grid overlay */
-#banner img:nth-child(1) {
+#grid {
   position: absolute;
   width: 54%;
   height: 249px; }
 
-#banner img:nth-child(2) {
-  position: relative;
-  left: 2%;
-  bottom: -6%;
-  width: 40%;
+#logo {
+  position: absolute;
+  top: 7%;
   height: 171px; }
 
 #banner-loc {
@@ -199,7 +197,7 @@ table tr td a h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800; }
 
-table tr td:nth-child(1) {
+.lance {
   width: 30%;
   background-size: 161% auto;
   background-image: url(../assets/sk8er-4.png);
@@ -212,7 +210,7 @@ table tr td h1:nth-child(1) {
   position: relative;
   top: 4%; }
 
-table tr td:nth-child(2) {
+.rodney {
   width: 30%;
   background-size: 178% auto;
   background-image: url(../assets/sk8er-3.png);
@@ -225,7 +223,7 @@ table tr td h1:nth-child(2) {
   position: relative;
   top: 4%; }
 
-table tr td:nth-child(3) {
+.tommy {
   width: 30%;
   background-size: 295% auto;
   background-image: url(../assets/sk8er-2.png);
@@ -244,7 +242,7 @@ table tr:nth-child(2) {
   width: 100%;
   height: 50%; }
 
-table tr:nth-child(2) td {
+.steve {
   width: 30%;
   height: 150%;
   background-size: 113% auto;
@@ -268,7 +266,11 @@ table tr:nth-child(2) td h1 {
   box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5); }
 
 .boards {
-  margin: auto 2%; }
+  margin: auto 2%;
+  display: inline-block; }
+  .boards div {
+    display: inline-block;
+    float: right; }
 
 .boards img:nth-child(1) {
   padding: 0;
@@ -298,6 +300,9 @@ table tr:nth-child(2) td h1 {
   background-color: white;
   display: inline-block;
   background-color: white; }
+
+.contact-us-resp {
+  display: none; }
 
 #name {
   position: relative;

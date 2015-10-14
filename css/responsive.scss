@@ -1,7 +1,7 @@
 @media (max-width: 400px) {
 
   #wrapper {
-  width: 74%;
+  width: 101%;
   margin: 0;
   }
 
@@ -22,15 +22,32 @@
   box-shadow: 0 0 0 0;
   }
 
+
   #banner {
-    display: none;
+    width: 97.2%;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+    background-image:none;
+    background-size:none;
+    background-position:0;
+    box-shadow: none;
+
   }
-  #logo img{
+#grid {
+  display: none;
+}
+
+  #logo {
     width:68%;
     margin:7% 17%;
   }
   #banner-loc {
     display: none;
+  }
+
+  .threecol {
+    box-shadow: none;
   }
   .cols:nth-child(3) .cols:nth-child(2){
     display: none;
@@ -47,19 +64,96 @@
       margin:0;
     }
   }
+  #desktop-table {
+    display: none;
+  }
   #resp-table {
-    display:table;
+    margin-top: 5%;
+    border-collapse: separate;
+    display: table;
+    height: 370px;
+    width: 100%;
+    background-color: transparent;
+    border-spacing: 7px;
+    box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
+    h1 {
+      font-size: 1em;
     }
-  .lance {
-      width:50%
     }
-  .rodney {
-      width: 50%;
+    .lance {
+      width:45%;
+      background-size: 193% auto;
     }
-  .steve {
-      width:50;
+    .rodney {
+      width: 45%;
+      background-size: 198% auto;
     }
-  .tommy {
-      width:50;
+    .steve {
+      width:45%;
+      background-size: 191%;
+      background-position:-25px -5px;
     }
-}
+    .tommy {
+      width:45%;
+      background-position: -283px -26px;
+    }
+    #skateboards{
+      height:auto;
+    }
+    .boards {
+      margin:0;
+      padding-left: 20px;
+      display: block;
+      div {
+        background-color: white;
+        width: 100%;
+        float:none;
+        display: block;
+      }
+    }
+    #contact-us{
+      background-color: transparent;
+      height:214px;
+      margin-top: 9%;
+    }
+    .contact-col-left {
+      display: none;
+    }
+
+    .contact-col-right{
+      background-color: transparent;
+    }
+
+    .contact-col-right h4{
+      font-size: 1.5em;
+      position: relative;
+      left:75%;
+      font-family: "Didact Gothic", sans-serif;
+      color:white;
+      font-weight: bolder;
+    }
+
+    #name {
+      right: -47%;
+      top:3%;
+      width:138%
+    }
+
+    #email {
+      right:-47%;
+      width:138%;
+      top:2%;
+    }
+
+    #message {
+      right:-47%;
+      width: 138%;
+      top:1%;
+    }
+    #submit {
+      position:relative;
+      top:20px;
+      left:97px;
+    }
+
+  }
